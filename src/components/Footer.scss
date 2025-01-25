@@ -1,0 +1,89 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+  background-color: #222222;
+  color: #ffffff;
+  width: 100%;
+  min-height: auto; // Ensure height adapts to content
+  height: 20rem;
+  margin: 0;
+  gap: 20px;
+  box-sizing: border-box;
+
+  &__column {
+    flex: 1 1 calc(30% - 20px);
+    min-width: 250px;
+
+    > * {
+      margin-bottom: 10px; // Space between paragraphs, lists, etc.
+    }
+  }
+
+  &__column--wide {
+    flex: 2 1 calc(40% - 20px);
+    padding: 0 5%;
+  }
+
+  &__logo {
+    max-width: 100%;
+    max-height: 50px; // Limit logo height
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin: 10px 0;
+  }
+  &__heading {
+    font-size: 1.5em;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin: 5px 0;
+      margin-bottom: 10px;
+
+      a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1.1em;
+
+        &:hover {
+          color: #007bff; // Highlight color on hover
+        }
+      }
+    }
+  }
+
+  // Responsive styling for smaller screens
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column; // Ensure children stack vertically
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px; // Adjust padding
+    overflow: visible; // Reduce padding for smaller screens
+    height: auto;
+
+    &__column {
+      flex: 1 1 100%; // Make all columns full-width
+      margin: 15px 0;
+      text-align: center; // Center-align content for smaller screens
+    }
+
+    &__column--wide {
+      padding: 0; // Remove extra padding for better fit
+    }
+
+    &__logo {
+      max-width: 150px; // Limit logo size for small screens
+    }
+  }
+}

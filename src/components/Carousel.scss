@@ -1,0 +1,79 @@
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 80%;
+  margin: 5% auto;
+
+  &__track {
+    display: flex;
+    justify-content: space-between; // Create space between images
+    gap: 10em; // Adjust gap between images
+
+    overflow-x: scroll; // Allows horizontal scroll
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+      display: none; // Hide scrollbar
+    }
+  }
+
+  &__image {
+    flex: 0 0 calc(25% - 1em); // 4 images per row (25% width each), space of 1em
+    max-width: 150px; // Fixed width
+    max-height: 150px; // Fixed height
+    border-radius: 8px;
+    scroll-snap-align: center;
+  }
+
+  &__dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 15px;
+  }
+
+  &__dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &--active {
+      background-color: #007bff; // Highlighted color
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .carousel__track {
+    gap: 5em; // Slightly reduce the gap for medium screens
+  }
+
+  .carousel__image {
+    flex: 0 0 calc(33.33% - 1em); // 3 images per row for tablets and medium-sized screens
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel__track {
+    gap: 2em; // Reduce the gap for smaller screens
+  }
+
+  .carousel__image {
+    flex: 0 0 calc(50% - 1em); // 2 images per row for smaller screens
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel__track {
+    gap: 1em;
+  }
+
+  .carousel__image {
+    flex: 0 0 100%;
+  }
+}
