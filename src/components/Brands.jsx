@@ -31,91 +31,91 @@ import brand28 from "/assets/brand28.png";
 
 const Brands = () => {
   return (
-    <section class="brands">
-      <h2 class="brands__heading">Нам доверяют</h2>
-      <div class="brands__grid">
-        <div class="brands__card">
+    <section className="brands">
+      <h2 className="brands__heading">Нам доверяют</h2>
+      <div className="brands__grid">
+        <div className="brands__card">
           <img src={brand1} alt="Brand 1" />
         </div>
-        <div class="brands__card">
+        <div className="brands__card">
           <img src={brand2} alt="Brand 2" />
         </div>
-        <div class="brands__card">
+        <div className="brands__card">
           <img src={brand3} alt="Brand 3" />
         </div>
-        <div class="brands__card">
+        <div className="brands__card">
           <img src={brand4} alt="Brand 4" />
         </div>
-        <div class="brands__card">
+        <div className="brands__card">
           <img src={brand5} alt="Brand 5" />
         </div>
-        <div class="brands__card">
+        <div className="brands__card">
           <img src={brand6} alt="Brand 6" />
         </div>
-        <div class="brands__card">
+        <div className="brands__card">
           <img src={brand7} alt="Brand 7" />
         </div>
-        <div class="brands__card">
+        <div className="brands__card">
           <img src={brand8} alt="Brand 8" />
         </div>
-        <div class="brands__card">
+        <div className="brands__card">
           <img src={brand9} alt="Brand 9" />
         </div>
-        <div class="brands__card">
+        <div className="brands__card">
           <img src={brand10} alt="Brand 10" />
         </div>
-        <div class="brands__card">
+        <div className="brands__card">
           <img src={brand11} alt="Brand 11" />
         </div>
-        <div class="brands__card">
+        <div className="brands__card">
           <img src={brand12} alt="Brand 12" />
         </div>
-        <div class="brands__card">
+        <div className="brands__card">
           <img src={brand13} alt="Brand 13" />
         </div>
-        <div class="brands__card">
+        <div className="brands__card">
           <img src={brand14} alt="Brand 14" />
         </div>
-        <div class="brands__card">
+        <div className="brands__card">
           <img src={brand15} alt="Brand 15" />
         </div>
-        <div class="brands__card">
+        <div className="brands__card">
           <img src={brand16} alt="Brand 16" />
         </div>
-        <div class="brands__card">
+        <div className="brands__card">
           <img src={brand17} alt="Brand 17" />
         </div>
-        <div class="brands__card">
+        <div className="brands__card">
           <img src={brand18} alt="Brand 18" />
         </div>
-        <div class="brands__card">
+        <div className="brands__card">
           <img src={brand19} alt="Brand 19" />
         </div>
-        <div class="brands__card">
+        <div className="brands__card">
           <img src={brand20} alt="Brand 20" />
         </div>
-        <div class="brands__card">
+        <div className="brands__card">
           <img src={brand21} alt="Brand 21" />
         </div>
-        <div class="brands__card">
+        <div className="brands__card">
           <img src={brand22} alt="Brand 22" />
         </div>
-        <div class="brands__card">
+        <div className="brands__card">
           <img src={brand23} alt="Brand 23" />
         </div>
-        <div class="brands__card">
+        <div className="brands__card">
           <img src={brand24} alt="Brand 24" />
         </div>
-        <div class="brands__card">
+        <div className="brands__card">
           <img src={brand25} alt="Brand 25" />
         </div>
-        <div class="brands__card">
+        <div className="brands__card">
           <img src={brand26} alt="Brand 26" />
         </div>
-        <div class="brands__card">
+        <div className="brands__card">
           <img src={brand27} alt="Brand 27" />
         </div>
-        <div class="brands__card">
+        <div className="brands__card">
           <img src={brand28} alt="Brand 28" />
         </div>
       </div>

@@ -1,0 +1,131 @@
+.header__carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header__carousel {
+  width: 100%;
+  height: 70vh; /* Adjust height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Show only one image at a time */
+.header__carousel-item {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease-in-out;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+  }
+}
+
+.header__carousel-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+
+.header__carousel-content h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.header__carousel-content p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.header__carousel-button {
+  padding: 20px 35px;
+  font-size: 16px;
+  background-color: #008cba;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.header__carousel-button:hover {
+  background-color: #005f75;
+}
+
+/* Navigation Buttons */
+.carousel__button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+}
+
+.carousel__button--left {
+  left: 10px;
+}
+
+.carousel__button--right {
+  right: 10px;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  .header__carousel-container {
+    width: 100%;
+  }
+
+  .header__carousel {
+    height: 40vh;
+  }
+
+  .header__carousel-content {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .header__carousel-content h2 {
+    font-size: 18px;
+  }
+
+  .header__carousel-content p {
+    font-size: 14px;
+  }
+
+  .header__carousel-button {
+    font-size: 14px;
+  }
+
+  .carousel__button {
+    font-size: 20px;
+  }
+}

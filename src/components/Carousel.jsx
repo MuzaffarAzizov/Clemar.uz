@@ -4,9 +4,9 @@ import "./Carousel.scss";
 const Carousel = ({ images }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const carouselRef = useRef(null);
-  const imagesPerRow = 4; // Number of images per row
+  const imagesPerRow = 4; 
   const totalImages = images.length;
-  const totalDots = Math.ceil(totalImages / imagesPerRow); // Calculate total number of dots
+  const totalDots = Math.ceil(totalImages / imagesPerRow);
 
   const handleDotClick = (index) => {
     setActiveIndex(index);
